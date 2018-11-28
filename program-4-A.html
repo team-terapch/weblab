@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title> Left most vowel</title>
+		</head>
+		<body>
+			<script>
+				var ch="";
+				var str=prompt("enter the string","");
+				document.write("The string is "+str+"<br>");
+				str=str.toUpperCase();
+
+				for(i=0;i<str.length;i++)
+				{
+					 ch=str.charAt(i);
+					 if(ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
+					 break;
+				}
+
+				if(i<str.length)
+						document.write("The left most vowel is at position  "+(i+1));
+						else
+						document.write("No vowel found");
+			</script>
+		</body>
+	</html
